@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
-  get 'plants/index'
-  get 'plants/new'
-  get 'plants/create'
+  :plants, only: [:create, :index, :new, :show]
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
