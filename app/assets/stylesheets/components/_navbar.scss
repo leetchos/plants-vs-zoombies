@@ -1,3 +1,10 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e3e3e3;
+}
+
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
@@ -10,3 +17,16 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+// .nav-item-plant {
+//   border: 1px solid #92CE2F;
+//   margin: 0 20px 0 10px;
+//   padding: 0 5px;
+//   border-radius: 50px;
+//   color: #92CE2F;
+// }
+
+// .nav-item-plant:hover {
+//   background-color: #92CE2F;
+//   color: white;
+// }
