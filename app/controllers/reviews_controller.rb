@@ -3,10 +3,11 @@ class ReviewsController < ApplicationController
     @plant = Plant.find(params[:plant_id])
     @review = Review.new(review_params)
     @review.plant = @plant
-    if @plant.save
+    @review.user = current_user
+    if @review.save
       redirect_to plant_path(@plant)
     else
-      render "plant/show"
+      render "plants/show"
     end
   end
 
