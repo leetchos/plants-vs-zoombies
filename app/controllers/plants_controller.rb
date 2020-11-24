@@ -13,6 +13,7 @@ class PlantsController < ApplicationController
 
   def create
     @plant = Plant.new(plant_params)
+    @plant.user_id = current_user.id
     if @plant.save
       redirect_to plant_path(@plant)
     else
