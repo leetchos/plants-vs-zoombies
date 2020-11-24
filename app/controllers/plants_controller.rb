@@ -5,6 +5,7 @@ class PlantsController < ApplicationController
 
   def show
     @plant = Plant.find(params[:id])
+    @review = Review.new
   end
 
   def new
@@ -13,7 +14,7 @@ class PlantsController < ApplicationController
 
   def create
     @plant = Plant.new(plant_params)
-    @plant.user_id = current_user.id
+    @plant.user = current_user
     if @plant.save
       redirect_to plant_path(@plant)
     else
