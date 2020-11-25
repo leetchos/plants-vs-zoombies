@@ -1,18 +1,67 @@
 <h2 class>Have a look at our fine selection of plants 🌱</h2>
-
 <div class="container">
 
   <div class="grid">
-  <% @plants.each do |plant| %>   <!-- plant.photo -->
     <div class="grid-item">
       <div class="card"><img class="card-img" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-1_t4zlk1.png">
         <div class="card-content">
-          <h1 class="card-head"> <%= plant.name %></h1>
+          <h1 class="card-head">Peashooter</h1>
           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
-          <%= link_to "Explore", plant_path(plant), class: 'btn card-btn' %>
+          <button class="card-btn">Explore</button>
         </div>
       </div>
     </div>
-  <% end %>
+
+    <div class="grid-item">
+      <div class="card"><img class="card-img" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-2_zku4ke.png">
+        <div class="card-content">
+          <h1 class="card-head">Sunflower</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
+          <button class="card-btn">Explore</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card"><img class="card-img" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-3_sxl4gu.png">
+        <div class="card-content">
+          <h1 class="card-head">Cherry Bomb</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
+          <button class="card-btn">Explore</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="grid-item">
+      <div class="card"><img class="card-img" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-4_iivrby.png">
+        <div class="card-content">
+          <h1 class="card-head">Wall-Nut</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
+          <button class="card-btn">Explore</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card"><img class="card-img" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-5_mz7ldm.png">
+        <div class="card-content">
+          <h1 class="card-head">Chomper</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
+          <button class="card-btn">Explore</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card"><img class="card-img" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176918/find-your-plants/plant-6_pmi0dg.png">
+        <div class="card-content">
+          <h1 class="card-head">Ice Peashooter</h1>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
+          <button class="card-btn">Explore</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
