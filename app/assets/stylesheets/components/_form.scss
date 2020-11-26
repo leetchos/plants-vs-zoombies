@@ -1,9 +1,7 @@
 .form{
     display: flex;
   }
-  .btn-ghost:hover {
-    opacity: 1;
-  }
+
   .btn-gradient {
     color: rgb(155, 144, 144);
     padding: 8px 24px;
@@ -22,6 +20,5 @@
     background: linear-gradient(#167FFB, #0F60C4);
     transition: background 0.3s ease;
     border: 1px solid #bdd7f7;
-
   }
   
