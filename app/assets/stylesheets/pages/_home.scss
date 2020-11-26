@@ -49,13 +49,20 @@ html {
   scroll-behavior: smooth;
 }
 
+
+// Grid Items //
+
+
 h2 {
-  text-align: center;
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  padding-top: 40px;
   color: #6f6f6f;
+  font-weight: bold;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 40px;
 }
 
 .container {
