@@ -6,7 +6,7 @@
   <% @plants.each do |plant| %>   <!-- plant.photo -->
     <div class="grid-item">
       <div class="card">
-        <div class="card-photo" style="background-image: url('<%= cl_image_path plant.photo.key, height: 300, width: 400, crop: :fill %>')"></div>
+        <img class ="card-img" src="<%= cl_image_path plant.photo.key %>" >
         <div class="card-content">
 
           <h1 class="card-head"> <%= plant.name %></h1>
