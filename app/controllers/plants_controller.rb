@@ -3,16 +3,17 @@ class PlantsController < ApplicationController
   def index
     @plants = Plant.all
     # the `geocoded` scope filters only flats with coordinates (latitude & longitude)
-    @markers = @flats.geocoded.map do |flat|
-      {
-        lat: flat.latitude,
-        lng: flat.longitude
-      }
   end
 
   def show
     @plant = Plant.find(params[:id])
     @review = Review.new
+    @markers = [
+      {
+        lat: @plant.latitude,
+        lng: @plant.longitude
+      }
+    ]
   end
 
   def new
