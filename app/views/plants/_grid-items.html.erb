@@ -10,7 +10,7 @@
         <div class="card-content">
 
           <h1 class="card-head"> <%= plant.name %></h1>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis venenatis est sed.</p>
+          <p class="card-text"><%= plant.description %></p>
           <%= link_to "Explore", plant_path(plant), class: 'btn card-btn' %>
         </div>
       </div>
