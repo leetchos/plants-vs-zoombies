@@ -12,7 +12,6 @@
 
 .grid-item-show {
   overflow: hidden;
-  cursor: pointer;
 }
 
 .card-show {
@@ -79,6 +78,58 @@
   opacity: 0.6;
 }
 
+.price-show-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card-content-show h2 {
+  text-align: right;
+  margin-right: 2rem;
+  font-size: 25px;
+}
+
+#plant-quantity-show {
+  width: 50%;
+}
+
+hr {
+  border-top: 1px solid #e3e3e3;
+  margin-right: 2rem;
+}
+
+.hr-1 {
+  margin: 50px 0 30px 0;
+}
+
+.hr-2 {
+  margin: 30px 0 50px 0;
+}
+
+.card-btn-show {
+  color: white;
+  background-color: #92CE2F;
+  border-radius: 50px;
+  padding: 15px 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card-btn-show:hover {
+  background-color: #71aa00;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.card-btn-show .fa-shopping-cart {
+  color: white;
+}
+
+
+// Review Style //
+
+
 .review-show {
   padding: 50px;
 }
@@ -91,7 +142,6 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-
 .review-show p {
   font-size: 14px;
   color: #3d3d3d;
@@ -100,19 +150,3 @@
   text-align: justify;
   line-height: 22px;
 }
-
-// .card-btn-show {
-//   border: 1px solid #92CE2F;
-//   color: #92CE2F;
-//   background-color: white;
-//   border-radius: 3px;
-//   width: 50%;
-//   padding: 5px 5px;
-// }
-
-// .card-btn-show:hover {
-//   background-color: #92CE2F;
-//   color: white;
-// }
-
-
