@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :plants, only: [:create, :index, :new, :show] do
     resources :reviews, only: [:create]
+    resources :purchases, only: [:create]
   end
   devise_for :users
   root to: 'plants#index'
