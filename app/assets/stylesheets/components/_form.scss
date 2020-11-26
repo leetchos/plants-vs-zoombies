@@ -5,7 +5,7 @@
     opacity: 1;
   }
   .btn-gradient {
-    color: white;
+    color: rgb(155, 144, 144);
     padding: 8px 24px;
     border-radius: 4px;
     font-weight: bold;
@@ -13,3 +13,15 @@
     transition: background 0.3s ease;
     border: 1px solid #bdd7f7;
   }
+
+  .btn-sing-up{
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: linear-gradient(#167FFB, #0F60C4);
+    transition: background 0.3s ease;
+    border: 1px solid #bdd7f7;
+
+  }
+  
