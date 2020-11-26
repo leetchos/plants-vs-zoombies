@@ -6,7 +6,7 @@
         <div class="card-content-show">
           <h1 class="card-head-show"> <%= @plant.name %> </h1>
           <p class="card-text-show"> <%= @plant.description %> </p>
-   
+
           <img class="card-img-show" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-1_t4zlk1.png">
           <div class="badge-show">
             <span class="badge badge-pill badge-1">Awesome</span>
@@ -36,20 +36,17 @@
       <% if @plant.reviews.empty? %>
         <p>Be the first to let a review</p>
       <% else %>
-        <ul class="list-group">
-          <% @plant.reviews.each do |review| %>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-              <span class="badge badge-primary badge-pill">
-                <% counter = 0 %>
-                <% 5.times do %>
-                  <i class="fa <%= review.rating > counter ? 'fa-star' : 'fa-star-o' %>"></i>
-                  <% counter += 1 %>
-                <% end %>
-              </span>
-              <%= review.content %>
-            </li>
-          <% end %>
-        </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-4">
+              <%= simple_form_for @review do |f| %>
+                <%= f.input :content %>
+                <%= f.input :rating, collection: (1..5).to_a, label: "Rate your experience" %>
+                <%= f.submit "Send your review" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
       <% end %>
 
      <%= render "reviews/new", plant: @plant, review: @review %>
@@ -58,3 +55,4 @@
 </div>
 
 <%= render 'shared/footer' %>
+
