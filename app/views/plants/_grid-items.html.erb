@@ -1,0 +1,21 @@
+<h2 class="title">Have a look at our fine selection of plants 🌱</h2>
+
+<div class="container">
+
+  <div class="grid">
+  <% @plants.each do |plant| %>   <!-- plant.photo -->
+    <div class="grid-item">
+      <div class="card">
+        <img class ="card-img" src="<%= cl_image_path plant.photo.key %>" >
+        <div class="card-content">
+
+          <h1 class="card-head"> <%= plant.name %></h1>
+          <p class="card-text"><%= plant.description %></p>
+          <%= link_to "Explore", plant_path(plant), class: 'btn card-btn' %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+

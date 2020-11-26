@@ -1,4 +1,5 @@
 class PlantsController < ApplicationController
+  skip_before_action :authenticate_user!, only: :index
   def index
     @plants = Plant.all
   end
@@ -25,6 +26,6 @@ class PlantsController < ApplicationController
   private
 
   def plant_params
-    params.require(:plant).permit(:name, :description, :quantity, :price)
+    params.require(:plant).permit(:name, :description, :quantity, :price, :photo)
   end
 end

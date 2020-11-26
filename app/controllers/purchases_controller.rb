@@ -9,7 +9,7 @@ class PurchasesController < ApplicationController
   end
 
   def show
-    @purchase = Purchase.find(params[:id])
+    @purchase = Purchase.find(params[:plant_id])
   end
 
   private
