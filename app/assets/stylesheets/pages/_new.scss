@@ -1,16 +1,19 @@
 .container-new {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  margin: 4rem 20rem;
+  margin: 4rem 25rem;
   padding: 2rem;
   padding-bottom: 3rem;
 }
 
-.col-md-8 h1 {
+.container-new h2 {
+  margin-bottom: 2rem;
+}
+
+.form-actions {
   font-size: 30px;
   font-weight: 700;
   color: #0d0d0d;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
   font-family: 'Open Sans', sans-serif;
-  padding-top: 2rem;
 }
