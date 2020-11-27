@@ -7,7 +7,7 @@
           <h1 class="card-head-show"> <%= @plant.name %> </h1>
           <p class="card-text-show"> <%= @plant.description %> </p>
 
-          <img class="card-img-show" src="https://res.cloudinary.com/nicolasenne/image/upload/v1606176917/find-your-plants/plant-1_t4zlk1.png">
+          <%= cl_image_tag @plant.photo.key, class: "card-img-show" if @plant.photo.attached? %>
           <div class="badge-show">
             <span class="badge badge-pill badge-1">Awesome</span>
             <span class="badge badge-pill badge-2">Cool Plant</span>
@@ -16,7 +16,7 @@
           <hr class="hr-1">
           <div class="price-show-grid">
             <input class="form-control numeric integer optional" type="number" step="1" name="plant[quantity]" id="plant-quantity-show">
-            <h2>Price $20.00</h2>
+           <span id="price-plant"><%= @plant.price %></span>
           </div>
           <hr class="hr-2">
           <a href="#" class="card-btn-show">Buy This Plant  <i class="fas fa-shopping-cart"></i></a>
