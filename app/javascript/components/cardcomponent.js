@@ -1,4 +1,5 @@
 const initCard = () => {
+  if (document.getElementById("price-plant")){
   var price = document.getElementById("price-plant").innerHTML;
   //var noPlants = document.getElementById("plant-quantity-show").value;
   //var total = parseFloat(price) * noPlants;
@@ -13,6 +14,7 @@ const initCard = () => {
 
 
   });
+  }
 };
 
 export { initCard };
