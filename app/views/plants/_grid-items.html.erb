@@ -3,10 +3,12 @@
 <div class="container">
 
   <div class="grid">
-  <% @plants.each do |plant| %>   <!-- plant.photo -->
+  <% @plants.each do |plant| %>
     <div class="grid-item">
       <div class="card">
-        <img class ="card-img" src="<%= cl_image_path plant.photo.key %>" >
+
+        <%= cl_image_tag plant.photo.key, class: "card-img" if plant.photo.attached? %>
+
         <div class="card-content">
 
           <h1 class="card-head"> <%= plant.name %></h1>

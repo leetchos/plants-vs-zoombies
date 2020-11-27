@@ -12,7 +12,6 @@
 
 .grid-item-show {
   overflow: hidden;
-  cursor: pointer;
 }
 
 .card-show {
@@ -87,6 +86,7 @@
 .card-content-show h2 {
   text-align: right;
   margin-right: 2rem;
+  font-size: 25px;
 }
 
 #plant-quantity-show {
@@ -149,4 +149,8 @@ hr {
   margin-bottom: 2rem;
   text-align: justify;
   line-height: 22px;
+}
+
+.br-widget a {
+  font-size: 18px !important;
 }
